@@ -50,5 +50,5 @@ par(mfrow = c(2,2), mar = c(4,4,2,1))
 
   plot(data$DateTime, data$GlobalReactivePower, ylab = "Global_reactive_power", xlab = "datetime", type = "l")
 
-dev.copy(png, file = "plot4.png")
+dev.copy(png, file = "plot4.png", height = 480, width = 480)
 dev.off()
