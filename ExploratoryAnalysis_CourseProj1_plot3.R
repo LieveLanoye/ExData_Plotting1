@@ -47,5 +47,5 @@ with(data, plot(data$DateTime, data$SubMeter1, type = "l", col = "black"), type 
 lines(data$DateTime, data$SubMeter2, col = "red")
 lines(data$DateTime, data$SubMeter3, col = "blue")
 legend("topright", lty = 1, lwd = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"))
-dev.copy(png, file = "plot3.png")
+dev.copy(png, file = "plot3.png", height = 480, width = 480)
 dev.off()
