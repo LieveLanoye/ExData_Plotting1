@@ -40,5 +40,5 @@ data <-cbind(DateTime, data)
 
 par(mfrow = c(1,1), mar = c(4,4,2,1))
 with(data,hist(data$GlobalActivePower, xlab = "Global Active Power (kilowatts)", ylab = "Frequency", main = "Global Active Power", col="red"))
-dev.copy(png, file = "plot1.png")
+dev.copy(png, file = "plot1.png", height = 480, width = 480)
 dev.off()
